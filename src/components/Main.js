@@ -64,8 +64,8 @@ function Main() {
             </div>
             <div className="main--image-container">
                 <img className="main--image" src={meme.memeImage} alt="meme"/>
-                <p className="meme-text top">Top text</p>
-                <p className="meme-text bottom">Bottom text and some extra just for testing</p>
+                <p className="meme-text top">{meme.topText}</p>
+                <p className="meme-text bottom">{meme.bottomText}</p>
             </div>
         </div>
     )

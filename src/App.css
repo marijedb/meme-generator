@@ -8,6 +8,12 @@ body {
   color: #252525;
 }
 
+
+
+
+
+/* NAVIGATION SECTION */
+
 .navbar {
   display: flex;
   align-items: center;
@@ -17,9 +23,14 @@ body {
   height: 100px;
 }
 
+.navbar--logo {
+  height: 65px;
+  margin-left: 1em;
+  margin-right: .5em;
+}
+
 .navbar--title {
   font-size: 1.5rem;
-  margin-left: 1em;
 }
 
 .navbar--p {
@@ -36,6 +47,13 @@ body {
 }
 
 
+
+
+
+
+/* MAIN SECTION */
+
+/* Main general */
 .main {
   display: flex;
   flex-direction: column;
@@ -43,6 +61,44 @@ body {
   margin: 0 auto;
   padding: 1em 0;
 }
+
+/* Main form */
+
+.form {
+  display: grid;
+  padding: 0 1em;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+}
+
+.form--input {
+  font-family: inherit;
+  padding: 1em;
+  border: 1px solid #808080;
+  border-radius: 5px;
+  grid-column: 1 / 2;
+}
+
+.form--input:focus {
+  outline: none;
+  border: 1px solid #f700ff;
+}
+
+.form--button {
+  background: linear-gradient(138deg, #020024 0%, #094479 0%, #f700ff 100%);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+  grid-column: 1 / 2;
+  margin-bottom: 2em;
+  padding: 1em;
+  text-shadow: 0 0 1px #000;
+}
+
+/* Main image + text */
 
 .main--image-container {
   padding: 0 1em;
@@ -77,39 +133,20 @@ body {
 }
 
 
-.form {
-  display: grid;
-  padding: 0 1em;
-  grid-template-columns: 1fr;
-  grid-gap: 1em;
-}
 
-.form--input {
-  font-family: inherit;
-  padding: 1em;
-  border: 1px solid #808080;
-  border-radius: 5px;
-  grid-column: 1 / 2;
-}
 
-.form--input:focus {
-  outline: none;
-  border: 1px solid #f700ff;
-}
 
-.form--button {
-  background: linear-gradient(138deg, #020024 0%, #094479 0%, #f700ff 100%);
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  font-family: inherit;
-  grid-column: 1 / 2;
-  margin-bottom: 2em;
-  padding: 1em;
-}
+
+/* MEDIA QUERIES */
+
+/* Small screens */
 
 @media (max-width: 400px) {
+  /* Navbar */
+  .navbar--logo {
+    height: 50px;
+  }
+
   .navbar--title {
     font-size: 1rem;
   }
@@ -118,23 +155,19 @@ body {
     font-size: .6rem;
   }
 
+  /* Main meme */
   .meme-text {
     font-size: 1rem;
   }
 
 }
 
+/* Large screens */
+
 @media (min-width: 600px) {
-  .form {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .form--input {
-    grid-column: auto;
-  }
-
-  .form--button {
-    grid-column: 1 / 3;
+  /* Navbar */
+  .navbar--logo {
+    height: 80px;
   }
 
   .navbar--title {
@@ -145,8 +178,24 @@ body {
     font-size: 1.3rem;
   }
 
+
+  /* Main */
+  .form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form--input {
+    grid-column: auto;
+    font-size: 1.2rem;
+  }
+
+  .form--button {
+    grid-column: 1 / 3;
+    font-size: 1.2rem;
+  }
+
+  /* Main meme */
   .meme-text {
     font-size: 2rem;
   }
-
 }
