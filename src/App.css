@@ -110,11 +110,11 @@ body {
 }
 
 .meme-text {
-  font-family: Impact, 'Anton', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Anton', sans-serif;
   text-transform: uppercase;
   position: absolute; 
   color: #fff;
-  text-shadow: 0 0 5px #3c3c3c;
+  text-shadow: 2px 2px 5px #232323;
   font-size: 1.5rem;
   font-weight: bold;
   left: 0; 
@@ -123,6 +123,7 @@ body {
   margin-right: auto; 
   width: 85%;
   text-align: center;
+  letter-spacing: 2px;
 }
 
 .top {
