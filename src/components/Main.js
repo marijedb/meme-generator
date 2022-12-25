@@ -5,7 +5,7 @@ function Main() {
     const [meme, setMeme] = useState({
         topText: "",
         bottomText: "",
-        memeImage: ""
+        memeImage: "https://i.imgflip.com/1op9wy.jpg"
     }) 
         
     const [memeImages, setMemeImages] = useState({})
@@ -43,7 +43,7 @@ function Main() {
         <div className="main">
             <div className="form">
                 <input 
-                    className="form--input-top"
+                    className="form--input"
                     type="text"
                     name="topText"
                     placeholder="Top text here" 
@@ -51,7 +51,7 @@ function Main() {
                     onChange={handleChange}
                 />
                 <input 
-                    className="form--input-bottom"
+                    className="form--input"
                     type="text"
                     name="bottomText"
                     placeholder="Bottom text here" 
@@ -62,7 +62,7 @@ function Main() {
                     Get a new Meme image
                 </button>
             </div>
-            {meme.memeImage && <img className="main--image" src={meme.memeImage} alt="meme"/>}
+            <img className="main--image" src={meme.memeImage} alt="meme"/>
         </div>
     )
 }
