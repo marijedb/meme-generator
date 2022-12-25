@@ -110,12 +110,13 @@ body {
 }
 
 .meme-text {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, 'Anton', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-transform: uppercase;
   position: absolute; 
   color: #fff;
   text-shadow: 0 0 5px #3c3c3c;
   font-size: 1.5rem;
+  font-weight: bold;
   left: 0; 
   right: 0; 
   margin-left: auto; 
