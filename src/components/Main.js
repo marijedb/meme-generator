@@ -62,7 +62,11 @@ function Main() {
                     Get a new Meme image
                 </button>
             </div>
-            <img className="main--image" src={meme.memeImage} alt="meme"/>
+            <div className="main--image-container">
+                <img className="main--image" src={meme.memeImage} alt="meme"/>
+                <p className="meme-text top">Top text</p>
+                <p className="meme-text bottom">Bottom text and some extra just for testing</p>
+            </div>
         </div>
     )
 }

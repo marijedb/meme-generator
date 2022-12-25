@@ -44,9 +44,36 @@ body {
   padding: 1em 0;
 }
 
-.main--image {
+.main--image-container {
   padding: 0 1em;
+  position: relative;
+}
+
+.main--image {
   max-width: 100%;
+}
+
+.meme-text {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-transform: uppercase;
+  position: absolute; 
+  color: #fff;
+  text-shadow: 0 0 5px #3c3c3c;
+  font-size: 1.5rem;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 85%;
+  text-align: center;
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  bottom: 0;
 }
 
 
@@ -91,6 +118,10 @@ body {
     font-size: .6rem;
   }
 
+  .meme-text {
+    font-size: 1rem;
+  }
+
 }
 
 @media (min-width: 600px) {
@@ -112,6 +143,10 @@ body {
 
   .navbar--p {
     font-size: 1.3rem;
+  }
+
+  .meme-text {
+    font-size: 2rem;
   }
 
 }
